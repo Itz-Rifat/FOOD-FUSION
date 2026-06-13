@@ -6,9 +6,9 @@ import "./FeaturedItem.css"
 
 const FeatureItem = () => {
     return (
-        <div className='featured_item text-white pt-1'>
-            <SectionTitle subheading={"Check it out"} heading={"FROM OUR MENU"}></SectionTitle>
-            <div className='md:flex mb-8 max-w-6xl mx-auto py-8 items-center'>
+        <div className='featured_item bg-fixed text-white pt-1'>
+            <SectionTitle subheading={"Check it out"} heading={"Features"}></SectionTitle>
+            <div className='md:flex mb-8  max-w-6xl mx-auto py-8 items-center'>
                 <div>
                     <img className='w-200' src={feature_img} alt="Featured Item" />
                 </div>

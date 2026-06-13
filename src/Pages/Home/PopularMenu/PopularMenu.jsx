@@ -27,13 +27,16 @@ const PopularMenu = () => {
   const menu = [...tempMenu]
 
   return (
-    <div className="mx-auto max-w-[1320px] px-4">
+    <div className="mx-auto max-w-[1320px] mb-8 px-4">
       <SectionTitle subheading={"Check it out"} heading={"FROM OUR MENU"}></SectionTitle>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         {
           menu.map((item) => <MenuItem key={item._id} item={item}></MenuItem>)
         }
+      </div>
+      <div className="justify-center flex">
+        <button className='btn hover:border-none border-b-4 border-gray-600 btn-outline border-0  mt-4'>View Full Menu</button>
       </div>
     </div>
   )

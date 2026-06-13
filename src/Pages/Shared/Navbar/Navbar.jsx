@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 
@@ -13,23 +14,18 @@ const Navbar = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-gray-200 text-black rounded-box z-1 mt-3 w-35 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Item 2</a>
-                                
-                            </li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/menu">Our Menu</Link></li>
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">FOOD FUSION</a>
+                    <Link to="/" className="pl-15 text-blue-300 font-bold text-xl">FOOD FUSION</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Item 2</a>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        <li><Link to="/">Home</Link></li>
+                            <li><Link to="/menu">Our Menu</Link></li>
+                            <li><a>Item 3</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
